@@ -71,6 +71,8 @@ export const getStreamData = async (eventId: string) => {
         await sleep(1000);
         await page.screenshot({path: 'config/loginfilled.png'});
         await loginFrame.click('text=Log In');
+        await sleep(1000);
+        await page.screenshot({path: 'config/postclick.png'});
       }
     }
   } catch (e) {
